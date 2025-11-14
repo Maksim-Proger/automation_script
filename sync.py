@@ -1,5 +1,6 @@
 import os
 import paramiko
+import time
 
 def sync_to_server(yaml_text: str, server: dict):
     host = server["host"]
