@@ -1,6 +1,6 @@
 
 # Папка и файл для наблюдения
-WATCH_DIR = "/home/vboxuser/ymalfiles"
+WATCH_DIR = "etc/myapp/"
 WATCH_FILENAME = "config.yaml"
 
 # Дебаунс
@@ -12,7 +12,14 @@ SERVERS = [
         "host": "192.168.56.102",
         "port": 22,
         "username": "vboxuser",
-        "key_filename": "/home/vboxuser/.ssh/id_ed25519",
-        "remote_path": "/home/vboxuser/ymalfiles"
-    }
+        "key_filename": "/home/vboxuser/.ssh/vm2",
+        "remote_path": "etc/myapp/"
+    },
+    # {
+    #     "host": "192.168.0.102",
+    #     "port": 22,
+    #     "username": "имя пользователя на вспомогательном сервере",
+    #     "key_filename": "путь к SSH-ключу",
+    #     "remote_path": "адрес файла на вспомогательном сервере"
+    # }
 ]
